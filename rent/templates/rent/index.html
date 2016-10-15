@@ -1,0 +1,9 @@
+{% if rent_list %}
+   <ul>
+   {% for property in rent_list %}
+       <li><a href="/rent/>{{property.id}}/">{{property.title}}</a></li>
+   {% endfor %}
+   </ul>
+{% else %}
+    <p>no data available</p>
+{% endif %}
